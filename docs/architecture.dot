@@ -1,0 +1,18 @@
+digraph A {
+  rankdir=LR;
+  node [shape=box, style="rounded", fontname="Arial", fontsize=10];
+  ui [label="Main\nMenu-driven UI"];
+  core [label="LibrarySystem\nWorkflow + Reports"];
+  inv [label="Inventory\nHashMap + synchronization"];
+  member [label="Member hierarchy\nMember -> Student/Faculty"];
+  book [label="Book"];
+  res [label="Reservation\nArrayList + ListIterator"];
+  loan [label="Loan"];
+  notif [label="Notification hierarchy\nDueDate / Overdue"];
+  threads [label="Threads\nConcurrentIssueTask\nAvailabilityWaitTask\nOverdueNotificationTask"];
+  collections [label="Collections\nArrayList | HashSet | HashMap | Hashtable\nIterator | ListIterator"];
+  exceptions [label="Custom Exceptions\n+ built-in exceptions"];
+  ui -> core;
+  core -> inv; core -> member; core -> res; core -> loan; core -> notif; core -> threads; core -> collections; core -> exceptions;
+  inv -> book;
+}

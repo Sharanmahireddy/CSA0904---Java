@@ -1,0 +1,11 @@
+Members:
+M001 | Aarav | Student
+M002 | Dr. Meera | Faculty
+M003 | Riya | Student
+
+Books:
+B101 | Java Programming | Herbert Schildt | Programming | 3 copies
+B102 | Data Structures | Mark Allen Weiss | Computer Science | 1 copy
+B103 | Database Systems | Raghu Ramakrishnan | Database | 2 copies
+B104 | Computer Networks | Andrew S. Tanenbaum | Networking | 2 copies
+B105 | Operating Systems | Silberschatz | Systems | 2 copies

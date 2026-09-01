@@ -1,0 +1,11 @@
+TC_ID,Test Case,Input/Action,Expected Result,Actual Result,Status
+TC01,Display inventory,Select 3,All sample books displayed with available copies,All sample books displayed with available copies,PASS
+TC02,Search book,Select 4 and keyword Java,Matching Java Programming record displayed,Matching Java Programming record displayed,PASS
+TC03,Issue available book,M001 + B101,Book issued and due date shown,Book issued and due date shown,PASS
+TC04,Invalid member,M999 + B101,InvalidMemberException handled without crash,Operation failed: Invalid member ID: M999,PASS
+TC05,Unavailable book,Issue B102 twice concurrently,Only one issue succeeds; shared stock remains 0,One task succeeds and one is rejected; stock remains 0,PASS
+TC06,Duplicate reservation,Reserve same unavailable book twice,DuplicateReservationException shown,Duplicate reservation is not allowed,PASS
+TC07,Return and fine,Return an overdue loan,Book returned and fine calculated,Book returned and fine calculated,PASS
+TC08,Update book,Update B103 title/author/category,Updated record displayed,Updated record displayed,PASS
+TC09,Notification,Run due/overdue notification,Due/overdue notification generated,Notification generated,PASS
+TC10,Utilization report,Select 14,Per-book and overall utilization shown,Per-book and overall utilization shown,PASS
